@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <div id="login">
+		<form onSubmit="login()">
+			<label for="username">Username</label>
+			<input id="username" type="text" placeholder="Enter Username">
+			<label for="password">Password</label>
+			<input id="password" type="password" placeholder="Enter Password">
+			<input type="submit" value="Login" />
+		</form>
+	</div>
+	<div id="balance"></div>
     <h1>Food Delivery</h1>
     <h3>Menu</h3>
     <div class="menu">
@@ -45,22 +55,11 @@
 
     <div class="alan-btn"></div>
 
+   
+
     <!-- <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script> -->
     <script type="text/javascript" src="https://tutor.alan.app/web/lib/alan_lib.js"></script>
-
-    <script>
-      var alanBtnInstance = alanBtn({
-        key: "b780a7e6d547ffe160dd7ed3be7c90842e956eca572e1d8b807a3e2338fdd0dc/stage",
-        onCommand: function (commandData) {
-          if (commandData.command === "go:back") {
-            //call client code that will react on the received command
-          }
-        },
-        rootEl: document.getElementById("alan-btn"),
-      });
-    </script>
-  
-
+    <script src="script.js"></script>
 </body>
 
 </html>
